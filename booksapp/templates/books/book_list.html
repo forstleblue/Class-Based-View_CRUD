@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans 'Books' %}{% endblock %}
+
+{% block content %}
+<h3>{% trans 'Books' %}</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><b>ISBN</b></th>
+      <th><b>Title</b></th>
+      <th><b>Publisher</b></th>
+      <th><b>Author</b></th>
+      <th colspan=2><b>Action</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for book in book_list %}
+    <tr>
+      <td>
+        <a href="{{ book.get_absolute_url }}">{{ book.isbn }}</a>
+      </td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.publisher }}</td>
+      <td>{{ book.author }}</td>
+      <td><a href="{% url 'books:update' book.isbn %}">Edit</a></td>
+      <td><a href="{% url 'books:delete' book.isbn %}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td colspan=6><a href="{% url 'books:create' %}">Add new book</a></td>
+    </tr>
+  </tbody>
+</table>
+{% endblock content %}

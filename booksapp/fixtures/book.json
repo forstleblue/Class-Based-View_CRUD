@@ -1,0 +1,41 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "isbn": "1449355730",
+      "title": "Learning Python",
+      "publisher": "O'Reilly Media",
+      "author": "Mark Lutz",
+      "pages": "1648",
+      "created_at": "2017-01-12T00:00:00+03:00",
+      "updated_at": "2017-01-12T00:00:00+03:00"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "isbn": "0981467342",
+      "title": "Two Scoops of Django: Best Practices for Django 1.8",
+      "publisher": "Two Scoops Press",
+      "author": "Daniel Roy Greenfeld",
+      "pages": "532",
+      "created_at": "2017-01-12T00:00:00+03:00",
+      "updated_at": "2017-01-12T00:00:00+03:00"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "isbn": "0321125215",
+      "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+      "publisher": "Addison-Wesley Professional",
+      "author": "Eric Evans",
+      "pages": "560",
+      "created_at": "2017-01-12T00:00:00+03:00",
+      "updated_at": "2017-01-12T00:00:00+03:00"
+    }
+  }
+]

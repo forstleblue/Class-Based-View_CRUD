@@ -1,0 +1,7 @@
+include README.md
+include MANIFEST.in
+include devskiller.json
+graft booksapp
+graft config
+global-exclude __pycache__
+global-exclude *.py[co]
